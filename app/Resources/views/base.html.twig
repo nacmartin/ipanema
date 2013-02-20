@@ -1,0 +1,14 @@
+{% extends 'MopaBootstrapBundle::base.html.twig' %}
+
+{% block head_style %}
+    {% stylesheets
+        '@MopaBootstrapBundle/Resources/public/less/mopabootstrapbundle.less'
+        '@ItbidSubastasBundle/Resources/public/css/main.css'
+    %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+    {% endstylesheets %}
+{% endblock head_style %} 
+
+{% block footer %}
+{% endblock footer %}
+

@@ -7,6 +7,10 @@ parameters:
     phpcr_backend:
         type: jackrabbit
         url: http://localhost:8080/server
+# Enable these lines to use file system caching for the storage API
+#        caches:
+#            meta: liip_doctrine_cache.ns.meta
+#            nodes: liip_doctrine_cache.ns.nodes
     phpcr_workspace: default
     phpcr_user: admin
     phpcr_pass: admin

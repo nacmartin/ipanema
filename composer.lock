@@ -1,5 +1,5 @@
 {
-    "hash": "7c93d02075cb3ad218a48d74466d1ed8",
+    "hash": "89e4faedde8e6748df28cbf6a3b9de2a",
     "packages": [
         {
             "name": "doctrine/common",
@@ -1561,6 +1561,114 @@
             "time": "2012-08-29 04:53:20"
         },
         {
+            "name": "mopa/bootstrap-bundle",
+            "version": "dev-master",
+            "target-dir": "Mopa/Bundle/BootstrapBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
+                "reference": "2dd90d719ca3b6a29abeabe93665f61f920ba1bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/2dd90d719ca3b6a29abeabe93665f61f920ba1bc",
+                "reference": "2dd90d719ca3b6a29abeabe93665f61f920ba1bc",
+                "shasum": ""
+            },
+            "require": {
+                "mopa/composer-bridge": "v1.0.0",
+                "symfony/symfony": ">=2.1,<2.3-dev"
+            },
+            "suggest": {
+                "craue/formflow-bundle": "dev-master",
+                "jlong/sass-twitter-bootstrap": "dev-master",
+                "knplabs/knp-menu-bundle": "1.1.*",
+                "knplabs/knp-paginator-bundle": "dev-master",
+                "twitter/bootstrap": "2.0.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mopa\\Bundle\\BootstrapBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Philipp A. Mohrenweiser",
+                    "email": "phiamo@googlemail.com",
+                    "homepage": "http://bootstrap.mohrenweiserpartner.de"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/phiamo/MopaBootstrapBundle/contributors"
+                }
+            ],
+            "description": "Easy integration of twitters bootstrap into symfony2",
+            "keywords": [
+                "bootstrap",
+                "bootstrap form",
+                "extra form",
+                "form",
+                "template"
+            ],
+            "time": "2013-02-20 14:19:39"
+        },
+        {
+            "name": "mopa/composer-bridge",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/phiamo/MopaComposerBridge.git",
+                "reference": "v1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/phiamo/MopaComposerBridge/archive/v1.0.0.zip",
+                "reference": "v1.0.0",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/console": "2.*"
+            },
+            "type": "symfony-bridge",
+            "autoload": {
+                "psr-0": {
+                    "Mopa\\Bridge\\Composer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Philipp A. Mohrenweiser",
+                    "email": "phiamo@googlemail.com",
+                    "homepage": "http://bootstrap.mohrenweiserpartner.de"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/phiamo/MopaComposerBridge/contributors"
+                }
+            ],
+            "description": "Symfony2 Composer Bridge",
+            "homepage": "http://bootstrap.mohrenweiserpartner.de",
+            "keywords": [
+                "Symfony2",
+                "composer"
+            ],
+            "time": "2012-10-11 18:29:49"
+        },
+        {
             "name": "phpcollection/phpcollection",
             "version": "dev-master",
             "source": {
@@ -2740,6 +2848,33 @@
                 "templating"
             ],
             "time": "2013-02-17 19:51:08"
+        },
+        {
+            "name": "twitter/bootstrap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twitter/bootstrap.git",
+                "reference": "v2.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twitter/bootstrap/zipball/v2.3.0",
+                "reference": "v2.3.0",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "http://twitter.github.com/bootstrap/",
+            "keywords": [
+                "bootstrap",
+                "css"
+            ],
+            "time": "2013-02-08 06:13:13"
         }
     ],
     "packages-dev": null,
@@ -2752,6 +2887,8 @@
         "doctrine/doctrine-fixtures-bundle": 20,
         "liip/functional-test-bundle": 20,
         "lunetics/locale-bundle": 20,
-        "liip/doctrine-cache-bundle": 20
+        "liip/doctrine-cache-bundle": 20,
+        "mopa/bootstrap-bundle": 20,
+        "twitter/bootstrap": 20
     }
 }
