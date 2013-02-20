@@ -4,7 +4,7 @@ static:
         title:
             en: "Welcome to the CMF Standard Edition"
             de: "Willkommen zur CMF Standard Edition"
-        body: 
+        body:
             en: "This is should get you started with the Symfony CMF."
             de: "Dies sollte Ihnen einen Einstieg in das Symfony CMF bieten."
 
@@ -29,7 +29,7 @@ static:
         title:
             en: "A map of a location in the US"
             de: "Eine Karte von einem Ort in Deutschland"
-        body: 
+        body:
             en: "Have a look at the map to find us."
             de: "Hier können Sie uns finden."
 
