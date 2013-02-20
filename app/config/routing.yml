@@ -1,0 +1,24 @@
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
+
+home_redirect:
+    pattern: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:redirect
+        route: /cms/simple
+        permanent: true # this for 301
+
+static:
+    pattern: /{_locale}/static
+    defaults:
+        _controller: AcmeMainBundle:Demo:static
+    requirements:
+        _locale: en|de
+
+cmf_create_rest:
+    resource: "@SymfonyCmfCreateBundle/Resources/config/routing/rest.xml"
+
+cmf_create_image:
+    resource: "@SymfonyCmfCreateBundle/Resources/config/routing/image.xml"
