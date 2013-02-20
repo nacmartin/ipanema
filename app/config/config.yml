@@ -24,10 +24,6 @@ assetic:
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
-        less:
-            node: /usr/local/bin/node
-            node_paths: [/opt/lessc/lib, /usr/local/lib/node_modules]
-            apply_to: "\.less$"
 
         #lessphp:
             #file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
