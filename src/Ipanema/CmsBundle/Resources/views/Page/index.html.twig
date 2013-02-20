@@ -1,10 +1,10 @@
 {% extends "::base.html.twig" %}
 
 {% block title %}{{ cmfMainContent.title|striptags }}{% endblock %}
-{% block headline %}{{ cmfMainContent.title|striptags }}{% endblock %}
 
-{% block content_content %}
+{% block content %}
 
+    <h1>{{cmfMainContent.title }}</h1>
     {{ cmfMainContent.body }}
     {# createphp cmfMainContent as="rdf" %}
     {{ rdf|raw }}

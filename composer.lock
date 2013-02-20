@@ -1,5 +1,5 @@
 {
-    "hash": "91e92cf977fee013412a48891c7fdd86",
+    "hash": "9a2470a7628884c834fa4d5b5ae05413",
     "packages": [
         {
             "name": "doctrine/common",
@@ -559,12 +559,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "a840cdca720b0998954176d73e619988f2c140af"
+                "reference": "e780969669a7cf0cf279d0f4a1a9166acfdc493f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/a840cdca720b0998954176d73e619988f2c140af",
-                "reference": "a840cdca720b0998954176d73e619988f2c140af",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/e780969669a7cf0cf279d0f4a1a9166acfdc493f",
+                "reference": "e780969669a7cf0cf279d0f4a1a9166acfdc493f",
                 "shasum": ""
             },
             "require": {
@@ -576,7 +576,7 @@
                 "jms/serializer-bundle": "<0.11-dev"
             },
             "require-dev": {
-                "jms/serializer-bundle": "0.11.*",
+                "jms/serializer-bundle": "1.0.*",
                 "sensio/framework-extra-bundle": ">=2.1,<2.3-dev",
                 "symfony/form": ">=2.1,<2.3-dev",
                 "symfony/security": ">=2.1,<2.3-dev",
@@ -622,7 +622,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2013-02-16 13:08:54"
+            "time": "2013-02-20 20:12:14"
         },
         {
             "name": "jackalope/jackalope",
@@ -2899,30 +2899,20 @@
         },
         {
             "name": "twitter/bootstrap",
-            "version": "dev-master",
+            "version": "master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twitter/bootstrap.git",
-                "reference": "v2.3.0"
+                "reference": "v2.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twitter/bootstrap/zipball/v2.3.0",
-                "reference": "v2.3.0",
-                "shasum": ""
+                "url": "https://github.com/twitter/bootstrap/zipball/master",
+                "reference": null,
+                "shasum": null
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-            "homepage": "http://twitter.github.com/bootstrap/",
-            "keywords": [
-                "bootstrap",
-                "css"
-            ],
-            "time": "2013-02-08 06:13:13"
+            "time": "2012-10-31 04:34:39"
         }
     ],
     "packages-dev": null,

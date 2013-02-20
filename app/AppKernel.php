@@ -30,8 +30,6 @@ class AppKernel extends Kernel
 //            new Symfony\Cmf\Bundle\SimpleCmsBundle\SymfonyCmfSimpleCmsBundle(),
 //            new Symfony\Cmf\Bundle\CreateBundle\SymfonyCmfCreateBundle(),
 
-            new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
-
             // and the sandbox bundle
 //            new Acme\MainBundle\AcmeMainBundle(),
             new Ipanema\CmsBundle\IpanemaCmsBundle(),
