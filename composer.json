@@ -21,7 +21,8 @@
         "lunetics/locale-bundle": "dev-master",
         "liip/doctrine-cache-bundle": "dev-master",
         "mopa/bootstrap-bundle": "dev-master",
-        "twitter/bootstrap": "dev-master"
+        "twitter/bootstrap": "dev-master",
+        "sensio/generator-bundle": "2.1.*"
     },
     "scripts": {
         "post-install-cmd": [

@@ -27,18 +27,20 @@ class AppKernel extends Kernel
             new Symfony\Cmf\Bundle\CoreBundle\SymfonyCmfCoreBundle(),
             new Symfony\Cmf\Bundle\MenuBundle\SymfonyCmfMenuBundle(),
             new Symfony\Cmf\Bundle\ContentBundle\SymfonyCmfContentBundle(),
-            new Symfony\Cmf\Bundle\SimpleCmsBundle\SymfonyCmfSimpleCmsBundle(),
+//            new Symfony\Cmf\Bundle\SimpleCmsBundle\SymfonyCmfSimpleCmsBundle(),
             new Symfony\Cmf\Bundle\CreateBundle\SymfonyCmfCreateBundle(),
 
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
 
             // and the sandbox bundle
-            new Acme\MainBundle\AcmeMainBundle(),
+//            new Acme\MainBundle\AcmeMainBundle(),
+            new Ipanema\CmsBundle\IpanemaCmsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
+            $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
 
         return $bundles;
