@@ -5,12 +5,8 @@ parameters:
     database_driver: pdo_sqlite
     database_path: '%kernel.root_dir%/app.sqlite'
     phpcr_backend:
-        type: doctrinedbal
-        connection: doctrine.dbal.default_connection
-# Enable these lines to use file system caching for the storage API
-#        caches:
-#            meta: liip_doctrine_cache.ns.meta
-#            nodes: liip_doctrine_cache.ns.nodes
+        type: jackrabbit
+        url: http://localhost:8080/server
     phpcr_workspace: default
     phpcr_user: admin
     phpcr_pass: admin

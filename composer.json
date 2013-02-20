@@ -14,7 +14,7 @@
         "symfony-cmf/symfony-cmf": "1.0.*",
         "symfony-cmf/simple-cms-bundle": "1.0.*",
         "symfony-cmf/create-bundle": "1.0.*",
-        "jackalope/jackalope-doctrine-dbal":"dev-master",
+        "jackalope/jackalope-jackrabbit":"dev-master",
         "doctrine/doctrine-bundle": "1.0.*",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
         "liip/functional-test-bundle": "dev-master",
