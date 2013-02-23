@@ -3,6 +3,18 @@
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #   prefix:   /_internal
 
+ipanema_cms_add:
+    pattern: /add-page/{path}
+    defaults: { _controller: IpanemaCmsBundle:Default:addPage }
+    requirements:
+        path: .+
+
+ipanema_cms_remove:
+    pattern: /remove-page/{path}
+    defaults: { _controller: IpanemaCmsBundle:Default:removePage }
+    requirements:
+        path: .+
+
 home_redirect:
     pattern: /
     defaults:

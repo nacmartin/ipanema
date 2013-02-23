@@ -9,9 +9,11 @@
             <li><a href="{{url}}">{{ title }}</a></li>
             <span class="divider">/</span>
         {% endfor %}
+        <a href="{{path('ipanema_cms_add', {path:cmfMainContent.id})}}">+</a>
     </ul>
 </div>
 
+    <a class="btn btn-danger" href="{{path('ipanema_cms_remove', {path:cmfMainContent.id})}}">Remove</a>
     {% createphp cmfMainContent as="rdf" %}
     {{ rdf|raw }}
     {% endcreatephp %}
