@@ -9,6 +9,12 @@ ipanema_cms_add:
     requirements:
         path: .+
 
+ipanema_cms_add_multilingual:
+    pattern: /add-multilingual-page/{path}
+    defaults: { _controller: IpanemaCmsBundle:Default:addMultilingualPage }
+    requirements:
+        path: .+
+
 ipanema_cms_remove:
     pattern: /remove-page/{path}
     defaults: { _controller: IpanemaCmsBundle:Default:removePage }
