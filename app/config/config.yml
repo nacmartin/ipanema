@@ -60,10 +60,16 @@ doctrine_phpcr:
         locales:
             en:
                 - en
-                - de
-            de:
-                - de
+                - es
+                - ca
+            es:
+                - es
                 - en
+                - ca
+            ca:
+                - ca
+                - en
+                - es
 
 liip_doctrine_cache:
     namespaces:

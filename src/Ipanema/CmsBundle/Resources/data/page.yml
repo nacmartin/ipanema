@@ -3,10 +3,12 @@ static:
         name: ""
         title:
             en: "Welcome to the CMF Standard Edition"
-            de: "Willkommen zur CMF Standard Edition"
+            es: "Bienvenidos al CMS Standard Edition"
+            ca: "Benvinguts al CMS Standard Edition"
         body:
             en: "This is should get you started with the Symfony CMF."
-            de: "Dies sollte Ihnen einen Einstieg in das Symfony CMF bieten."
+            es: "Esto debería de ser un punto de partida para el Symfony CMF."
+            ca: "Aixó ahuria de ser un punto de partida per al Symfony CMF."
 
     about:
         name: "about"
@@ -24,14 +26,17 @@ static:
         name: "map"
         label:
             en: "Map"
-            de: "Karte"
+            es: "Mapa"
+            ca: "Mapa"
         parent: "/contact"
         title:
             en: "A map of a location in the US"
-            de: "Eine Karte von einem Ort in Deutschland"
+            es: "Un mapa de localizatión en España"
+            ca: "Un mapa de localització a Catalunya"
         body:
             en: "Have a look at the map to find us."
-            de: "Hier können Sie uns finden."
+            es: "Mire el mapa para saber dónde encontrarnos."
+            ca: "Miri el mapa para saber a on trobarnos."
 
     team:
         name: "team"

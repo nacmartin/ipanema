@@ -40,16 +40,12 @@ class DefaultController extends Controller
         $page->setParent($parent);
         $page->setName('Name');
         $dm->persist($page);
-        $page->setLabel('Label-en');
-        $page->setTitle('Title-en');
-        $page->setBody('Body-en');
-        $dm->bindTranslation($page, 'en');
-        $page->setLabel('Label-de');
-        $page->setTitle('Title-de');
-        $page->setBody('Body-de');
-        $page->setLocale('de');
-        $dm->bindTranslation($page, 'de');
-        $dm->persist($page);
+        foreach (array('en', 'es', 'ca') as $locale) {
+            $page->setLabel("Label-$locale");
+            $page->setTitle("Title-$locale");
+            $page->setBody("Body-$locale");
+            $dm->bindTranslation($page, $locale);
+        }
         $dm->flush();
         return $this->redirect($this->generateUrl($page));
     }
