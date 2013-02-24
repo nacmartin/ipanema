@@ -111,6 +111,10 @@ symfony_cmf_menu:
 
 symfony_cmf_create:
     phpcr_odm: true
+    image:
+        model_class: Symfony\Cmf\Bundle\CreateBundle\Document\Image
+        controller_class: Symfony\Cmf\Bundle\CreateBundle\Controller\PHPCRImageController
+        static_basepath: '/cms/simple'
 
 lunetics_locale:
     strict_mode: true
