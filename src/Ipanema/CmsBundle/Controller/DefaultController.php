@@ -14,13 +14,14 @@ class DefaultController extends Controller
      */
     public function addPageAction($path)
     {
+        $name = $this->getRequest()->get('name');
 
         $dm = $this->get('doctrine_phpcr.odm.document_manager');
         $page = new Page();
-        $path = $path.'/newpage';
+        $path = $path.'/'.$name;
         $page->setId($path);
-        $page->setName('Name');
-        $page->setLabel('Label');
+        $page->setName($name);
+        $page->setLabel($name);
         $page->setTitle('Title');
         $page->setBody('Body');
         $dm->persist($page);
@@ -33,15 +34,16 @@ class DefaultController extends Controller
      */
     public function addMultilingualPageAction($path)
     {
+        $name = $this->getRequest()->get('name');
 
         $dm = $this->get('doctrine_phpcr.odm.document_manager');
         $page = new MultilangPage(true);
         $parent = $dm->find(null, $path);
         $page->setParent($parent);
-        $page->setName('Name');
+        $page->setName($name);
         $dm->persist($page);
         foreach (array('en', 'es', 'ca') as $locale) {
-            $page->setLabel("Label-$locale");
+            $page->setLabel("$name-$locale");
             $page->setTitle("Title-$locale");
             $page->setBody("Body-$locale");
             $dm->bindTranslation($page, $locale);

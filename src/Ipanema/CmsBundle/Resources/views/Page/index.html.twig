@@ -9,8 +9,14 @@
             <li><a href="{{url}}">{{ title }}</a></li>
             <span class="divider">/</span>
         {% endfor %}
-        <a href="{{path('ipanema_cms_add', {path:cmfMainContent.id})}}">+</a>
-        <a href="{{path('ipanema_cms_add_multilingual', {path:cmfMainContent.id})}}">+Multi</a>
+        <form class="form-inline" action="{{path('ipanema_cms_add', {path:cmfMainContent.id})}}" method="POST">
+            <input id="singleling-name" name="name">
+            <input type="submit" class="btn">Add monolingual page</submit>
+        </form>
+        <form class="form-inline" action="{{path('ipanema_cms_add_multilingual', {path:cmfMainContent.id})}}" method="POST">
+            <input id="multiling-name" name="name">
+            <input type="submit" class="btn">Add multilingual page</submit>
+        </form>
     </ul>
 </div>
 
