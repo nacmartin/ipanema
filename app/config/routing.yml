@@ -31,9 +31,9 @@ home_redirect:
 static:
     pattern: /{_locale}/static
     defaults:
-        _controller: AcmeMainBundle:Demo:static
+        _controller: IpanemaCmsBundle:Default:static
     requirements:
-        _locale: en|de
+        _locale: en|es|ca
 
 cmf_create_rest:
     resource: "@SymfonyCmfCreateBundle/Resources/config/routing/rest.xml"

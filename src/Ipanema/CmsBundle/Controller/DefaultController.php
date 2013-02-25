@@ -66,4 +66,12 @@ class DefaultController extends Controller
         $dm->flush();
         return $this->redirect($this->generateUrl($parent));
     }
+    public function dynamicAction()
+    {
+        return $this->render('IpanemaCmsBundle:Default:dynamic.html.twig');
+    }
+    public function staticAction()
+    {
+        return $this->render('IpanemaCmsBundle:Default:static.html.twig');
+    }
 }
