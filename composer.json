@@ -23,6 +23,7 @@
         "sensio/generator-bundle": "2.1.*",
         "sonata-project/doctrine-phpcr-admin-bundle": "1.0.*",
         "symfony-cmf/tree-browser-bundle":"1.0.*",
+        "symfony-cmf/search-bundle": "dev-master",
         "jms/security-extra-bundle": "1.4.*"
     },
     "scripts": {

@@ -1,5 +1,5 @@
 {
-    "hash": "010c759f0c9f3bb7f867cb1451339ed0",
+    "hash": "22f3dd78bd937ac3ad21cfd9ebac6c14",
     "packages": [
         {
             "name": "doctrine/common",
@@ -1475,6 +1475,51 @@
             "time": "2013-01-11 08:42:52"
         },
         {
+            "name": "liip/search-bundle",
+            "version": "dev-master",
+            "target-dir": "Liip/SearchBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liip/LiipSearchBundle.git",
+                "reference": "46224784a6e489de033f7cda2143e79cebf71c39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liip/LiipSearchBundle/zipball/46224784a6e489de033f7cda2143e79cebf71c39",
+                "reference": "46224784a6e489de033f7cda2143e79cebf71c39",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/framework-bundle": ">2.0,<2.2-dev"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Liip\\SearchBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Liip AG",
+                    "homepage": "http://www.liip.ch/"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/liip/LiipSearchBundle/contributors"
+                }
+            ],
+            "description": "This bundles provides some basic infrastructure for creating a search UI in Symfony2 applications along with integration with Google's search API",
+            "keywords": [
+                "Symfony2"
+            ],
+            "time": "2012-07-23 11:13:57"
+        },
+        {
             "name": "lunetics/locale-bundle",
             "version": "dev-master",
             "target-dir": "Lunetics/LocaleBundle",
@@ -1637,12 +1682,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-collection.git",
-                "reference": "2b9f71b9261930b05c3cd1d6ee2baa423b830e39"
+                "reference": "3ce8ffb990e9511c7a843f20740373eb27e4c3bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-collection/zipball/2b9f71b9261930b05c3cd1d6ee2baa423b830e39",
-                "reference": "2b9f71b9261930b05c3cd1d6ee2baa423b830e39",
+                "url": "https://api.github.com/repos/schmittjoh/php-collection/zipball/3ce8ffb990e9511c7a843f20740373eb27e4c3bd",
+                "reference": "3ce8ffb990e9511c7a843f20740373eb27e4c3bd",
                 "shasum": ""
             },
             "require": {
@@ -1679,7 +1724,7 @@
                 "sequence",
                 "set"
             ],
-            "time": "2013-02-20 19:38:18"
+            "time": "2013-02-25 13:15:41"
         },
         {
             "name": "phpcr/phpcr",
@@ -1947,19 +1992,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "38e3b307aed4dc1cd98602871dcf42d16802e061"
+                "reference": "969c2eb2767881e98b39ac61aad98d8fae1e7261"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/38e3b307aed4dc1cd98602871dcf42d16802e061",
-                "reference": "38e3b307aed4dc1cd98602871dcf42d16802e061",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/969c2eb2767881e98b39ac61aad98d8fae1e7261",
+                "reference": "969c2eb2767881e98b39ac61aad98d8fae1e7261",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": ">=2.2,<3.0",
                 "knplabs/knp-menu-bundle": ">=1.1.0,<2.0.x-dev",
                 "sonata-project/block-bundle": "dev-master",
-                "sonata-project/exporter": "1.1.*",
+                "sonata-project/exporter": "1.*",
                 "sonata-project/jquery-bundle": "dev-master",
                 "symfony/config": ">=2.1,<2.3-dev",
                 "symfony/console": ">=2.1,<2.3-dev",
@@ -1979,6 +2024,12 @@
                 "sonata-project/intl-bundle": "dev-master"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0": "2.0.x-dev",
+                    "dev-master": "2.1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Sonata\\AdminBundle": ""
@@ -2007,7 +2058,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2013-02-24 16:10:10"
+            "time": "2013-02-25 13:16:54"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2016,12 +2067,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle.git",
-                "reference": "23c04147b54ab93432a1ae2a044eca2edbdf27a5"
+                "reference": "a35e4532fccc1443aa0fc6a61b0466f0c8843719"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/23c04147b54ab93432a1ae2a044eca2edbdf27a5",
-                "reference": "23c04147b54ab93432a1ae2a044eca2edbdf27a5",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/a35e4532fccc1443aa0fc6a61b0466f0c8843719",
+                "reference": "a35e4532fccc1443aa0fc6a61b0466f0c8843719",
                 "shasum": ""
             },
             "require": {
@@ -2029,14 +2080,20 @@
                 "symfony/http-foundation": ">=2.1,<2.3-dev"
             },
             "require-dev": {
-                "sonata-project/admin-bundle": "dev-master",
-                "sonata-project/cache-bundle": "dev-master"
+                "sonata-project/admin-bundle": "2.1.x-dev",
+                "sonata-project/cache-bundle": "2.1.*"
             },
             "suggest": {
-                "sonata-project/admin-bundle": "dev-master",
-                "sonata-project/cache-bundle": "dev-master"
+                "sonata-project/admin-bundle": "2.1.x-dev",
+                "sonata-project/cache-bundle": "2.1.*"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0": "2.0.x-dev",
+                    "dev-master": "2.1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Sonata\\BlockBundle": ""
@@ -2063,7 +2120,7 @@
                 "block",
                 "sonata"
             ],
-            "time": "2013-02-16 14:05:06"
+            "time": "2013-02-25 13:18:19"
         },
         {
             "name": "sonata-project/doctrine-phpcr-admin-bundle",
@@ -2128,16 +2185,16 @@
         },
         {
             "name": "sonata-project/exporter",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sonata-project/exporter",
-                "reference": "1.1.0"
+                "url": "https://github.com/sonata-project/exporter.git",
+                "reference": "1.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/1.1.0",
-                "reference": "1.1.0",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/1.2.0",
+                "reference": "1.2.0",
                 "shasum": ""
             },
             "require": {
@@ -2177,7 +2234,7 @@
                 "export",
                 "xls"
             ],
-            "time": "2013-02-09 15:12:27"
+            "time": "2013-02-22 11:58:00"
         },
         {
             "name": "sonata-project/jquery-bundle",
@@ -2186,12 +2243,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonatajQueryBundle.git",
-                "reference": "5f87a761302e6c78304e071416f75d41eb1fb3c2"
+                "reference": "1.8.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonatajQueryBundle/zipball/5f87a761302e6c78304e071416f75d41eb1fb3c2",
-                "reference": "5f87a761302e6c78304e071416f75d41eb1fb3c2",
+                "url": "https://api.github.com/repos/sonata-project/SonatajQueryBundle/zipball/1.8.0",
+                "reference": "1.8.0",
                 "shasum": ""
             },
             "require": {
@@ -2199,6 +2256,16 @@
                 "symfony/framework-bundle": "2.*"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.4": "1.4.x-dev",
+                    "dev-1.5": "1.5.x-dev",
+                    "dev-1.6": "1.6.x-dev",
+                    "dev-1.7": "1.7.x-dev",
+                    "dev-1.8": "1.8.x-dev",
+                    "dev-master": "1.9.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Sonata\\jQueryBundle": ""
@@ -2225,7 +2292,7 @@
                 "jquery",
                 "sonata"
             ],
-            "time": "2012-08-29 23:34:42"
+            "time": "2013-02-25 13:25:10"
         },
         {
             "name": "symfony-cmf/block-bundle",
@@ -2611,6 +2678,50 @@
                 "routing"
             ],
             "time": "2013-02-22 13:46:29"
+        },
+        {
+            "name": "symfony-cmf/search-bundle",
+            "version": "dev-master",
+            "target-dir": "Symfony/Cmf/Bundle/SearchBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony-cmf/SearchBundle.git",
+                "reference": "567027cdf620543889c54a4de8461a28b448227d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony-cmf/SearchBundle/zipball/567027cdf620543889c54a4de8461a28b448227d",
+                "reference": "567027cdf620543889c54a4de8461a28b448227d",
+                "shasum": ""
+            },
+            "require": {
+                "liip/search-bundle": "dev-master",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "2.1.*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Cmf\\Bundle\\SearchBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony CMF Community",
+                    "homepage": "https://github.com/symfony-cmf/SearchBundle/contributors"
+                }
+            ],
+            "description": "Symfony SearchBundle",
+            "homepage": "http://cmf.symfony.com",
+            "keywords": [
+                "database",
+                "search"
+            ],
+            "time": "2013-01-16 17:42:40"
         },
         {
             "name": "symfony-cmf/simple-cms-bundle",
@@ -3049,12 +3160,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc"
+                "reference": "4458a2cb66a016440543ef34a07f540e14bee92e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/15336c154c960f7e55e8b9fc1043ce7764ed7edc",
-                "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/4458a2cb66a016440543ef34a07f540e14bee92e",
+                "reference": "4458a2cb66a016440543ef34a07f540e14bee92e",
                 "shasum": ""
             },
             "require": {
@@ -3090,7 +3201,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-02-21 06:47:52"
+            "time": "2013-02-25 06:01:12"
         }
     ],
     "packages-dev": null,
@@ -3103,6 +3214,7 @@
         "doctrine/doctrine-fixtures-bundle": 20,
         "liip/functional-test-bundle": 20,
         "lunetics/locale-bundle": 20,
-        "liip/doctrine-cache-bundle": 20
+        "liip/doctrine-cache-bundle": 20,
+        "symfony-cmf/search-bundle": 20
     }
 }

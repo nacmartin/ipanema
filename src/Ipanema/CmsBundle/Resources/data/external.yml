@@ -33,3 +33,9 @@ static:
             es: "Administración"
             ca: "Administració"
         symfony_route: "sonata_admin_dashboard"
+    search:
+        label:
+            en: "Search"
+            es: "Buscar"
+            ca: "Cercar"
+        symfony_route: "search"

@@ -56,3 +56,6 @@ fos_js_routing:
 symfony_cmf_tree:
     resource: .
     type: 'symfony_cmf_tree'
+
+liip_search:
+    resource: "@SymfonyCmfSearchBundle/Resources/config/routing.xml"

@@ -6,7 +6,7 @@ use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCRODM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @PHPCRODM\Document(translator="attribute")
+ * @PHPCRODM\Document(translator="child")
  *
  * provides multi language support when using MultilangRouteProvider
  */

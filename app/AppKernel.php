@@ -39,6 +39,9 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new JMS\AopBundle\JMSAopBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+            //search bundle
+            new Symfony\Cmf\Bundle\SearchBundle\SymfonyCmfSearchBundle(),
+            new Liip\SearchBundle\LiipSearchBundle(),
 
             // and the sandbox bundle
 //            new Acme\MainBundle\AcmeMainBundle(),
