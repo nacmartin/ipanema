@@ -81,6 +81,8 @@ class LoadInitialData extends LoadCmsData
                     $route = $dm->find(null, $basepath.'/'.$overview['route']);
                 }
                 $menuItem->setRoute($route->getId());
+            } elseif (!empty($overview['symfony_route'])) {
+                $menuItem->setRoute($overview['symfony_route']);
             } else {
                 $menuItem->setUri($overview['uri']);
             }
@@ -92,6 +94,7 @@ class LoadInitialData extends LoadCmsData
                 }
             }
         }
+
         $dm->flush();
     }
 }

@@ -27,3 +27,9 @@ static:
             es: "Estática"
             ca: "Estàtica"
         uri: "static"
+    admin:
+        label:
+            en: "Admin"
+            es: "Administración"
+            ca: "Administració"
+        symfony_route: "sonata_admin_dashboard"
