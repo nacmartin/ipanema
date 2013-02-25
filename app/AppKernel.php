@@ -44,6 +44,7 @@ class AppKernel extends Kernel
             new Liip\SearchBundle\LiipSearchBundle(),
             //Block bundle
             new Symfony\Cmf\Bundle\BlockBundle\SymfonyCmfBlockBundle(),
+            new Eko\FeedBundle\EkoFeedBundle(),
 
             // and the sandbox bundle
 //            new Acme\MainBundle\AcmeMainBundle(),

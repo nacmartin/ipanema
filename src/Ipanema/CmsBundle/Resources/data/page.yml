@@ -19,10 +19,8 @@ static:
                             title: Editable Simpleblock
                             content: This is a simple block. It is stored on the homepage, but also referenced from the company page.
                     child2:
-                        class: Symfony\Cmf\Bundle\BlockBundle\Document\SimpleBlock
-                        properties:
-                            title: Another editable SimpleBlock
-                            content: Both title and content of this block are editable.
+                        class: Symfony\Cmf\Bundle\BlockBundle\Document\RssBlock
+                        url: http://feeds.feedburner.com/symfony/blog
                     child3:
                         class: Symfony\Cmf\Bundle\BlockBundle\Document\ActionBlock
                         actionName: IpanemaCmsBundle:Default:block

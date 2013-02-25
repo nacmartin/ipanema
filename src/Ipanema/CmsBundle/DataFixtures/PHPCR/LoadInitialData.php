@@ -224,6 +224,8 @@ class LoadInitialData extends LoadCmsData
             $document->setReferencedBlock($referencedBlock);
         } elseif ($className == 'Symfony\Cmf\Bundle\BlockBundle\Document\ActionBlock') {
             $document->setActionName($block['actionName']);
+        } elseif ($className == 'Symfony\Cmf\Bundle\BlockBundle\Document\RssBlock') {
+            $document->setSetting('url', $block['url']);
         }
 
         // set properties

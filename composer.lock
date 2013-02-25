@@ -1,5 +1,5 @@
 {
-    "hash": "22f3dd78bd937ac3ad21cfd9ebac6c14",
+    "hash": "b7a87d1ee13fc70964354cb858a2892c",
     "packages": [
         {
             "name": "doctrine/common",
@@ -446,6 +446,53 @@
                 "phpcr"
             ],
             "time": "2013-02-24 20:27:32"
+        },
+        {
+            "name": "eko/feedbundle",
+            "version": "dev-master",
+            "target-dir": "Eko/FeedBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eko/FeedBundle.git",
+                "reference": "8f008a059e7f834183182e7db3532dbff7294686"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eko/FeedBundle/zipball/8f008a059e7f834183182e7db3532dbff7294686",
+                "reference": "8f008a059e7f834183182e7db3532dbff7294686",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": ">=2.0,<2.4-dev",
+                "zendframework/zend-feed": "2.0.*",
+                "zendframework/zend-http": "2.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Eko\\FeedBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Composieux",
+                    "email": "vincent.composieux@gmail.com"
+                }
+            ],
+            "description": "A Symfony bundle to build RSS feeds from entities",
+            "homepage": "http://github.com/eko/FeedBundle",
+            "keywords": [
+                "atom",
+                "bundle",
+                "feed",
+                "rss"
+            ],
+            "time": "2013-02-18 20:41:31"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -1992,20 +2039,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "969c2eb2767881e98b39ac61aad98d8fae1e7261"
+                "reference": "1a7f15b48f54736b753aaa17a777cbabece484a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/969c2eb2767881e98b39ac61aad98d8fae1e7261",
-                "reference": "969c2eb2767881e98b39ac61aad98d8fae1e7261",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/1a7f15b48f54736b753aaa17a777cbabece484a1",
+                "reference": "1a7f15b48f54736b753aaa17a777cbabece484a1",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": ">=2.2,<3.0",
                 "knplabs/knp-menu-bundle": ">=1.1.0,<2.0.x-dev",
-                "sonata-project/block-bundle": "dev-master",
+                "sonata-project/block-bundle": "2.1.x-dev",
                 "sonata-project/exporter": "1.*",
-                "sonata-project/jquery-bundle": "dev-master",
+                "sonata-project/jquery-bundle": "1.8.*",
                 "symfony/config": ">=2.1,<2.3-dev",
                 "symfony/console": ">=2.1,<2.3-dev",
                 "symfony/form": ">=2.1,<2.3-dev",
@@ -2017,11 +2064,12 @@
                 "twig/twig": ">=1.10,<2.0-dev"
             },
             "require-dev": {
-                "jms/translation-bundle": "*"
+                "jms/translation-bundle": "*",
+                "sonata-project/intl-bundle": "2.1.*"
             },
             "suggest": {
-                "sonata-project/doctrine-orm-admin-bundle": "dev-master",
-                "sonata-project/intl-bundle": "dev-master"
+                "sonata-project/doctrine-orm-admin-bundle": "2.1.x-dev",
+                "sonata-project/intl-bundle": "2.1.*"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -2058,7 +2106,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2013-02-25 13:16:54"
+            "time": "2013-02-25 15:09:52"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2238,17 +2286,17 @@
         },
         {
             "name": "sonata-project/jquery-bundle",
-            "version": "dev-master",
+            "version": "1.8.x-dev",
             "target-dir": "Sonata/jQueryBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonatajQueryBundle.git",
-                "reference": "1.8.0"
+                "reference": "5f87a761302e6c78304e071416f75d41eb1fb3c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonatajQueryBundle/zipball/1.8.0",
-                "reference": "1.8.0",
+                "url": "https://api.github.com/repos/sonata-project/SonatajQueryBundle/zipball/5f87a761302e6c78304e071416f75d41eb1fb3c2",
+                "reference": "5f87a761302e6c78304e071416f75d41eb1fb3c2",
                 "shasum": ""
             },
             "require": {
@@ -2256,16 +2304,6 @@
                 "symfony/framework-bundle": "2.*"
             },
             "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.4": "1.4.x-dev",
-                    "dev-1.5": "1.5.x-dev",
-                    "dev-1.6": "1.6.x-dev",
-                    "dev-1.7": "1.7.x-dev",
-                    "dev-1.8": "1.8.x-dev",
-                    "dev-master": "1.9.x-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Sonata\\jQueryBundle": ""
@@ -2292,7 +2330,7 @@
                 "jquery",
                 "sonata"
             ],
-            "time": "2013-02-25 13:25:10"
+            "time": "2012-08-29 23:34:42"
         },
         {
             "name": "symfony-cmf/block-bundle",
@@ -3202,6 +3240,429 @@
                 "templating"
             ],
             "time": "2013-02-25 06:01:12"
+        },
+        {
+            "name": "zendframework/zend-escaper",
+            "version": "2.0.7",
+            "target-dir": "Zend/Escaper",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendEscaper.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendEscaper/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Escaper\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "escaper",
+                "zf2"
+            ],
+            "time": "2013-01-01 15:44:13"
+        },
+        {
+            "name": "zendframework/zend-feed",
+            "version": "2.0.7",
+            "target-dir": "Zend/Feed",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendFeed.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendFeed/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-escaper": "self.version",
+                "zendframework/zend-servicemanager": "self.version",
+                "zendframework/zend-stdlib": "self.version",
+                "zendframework/zend-uri": "self.version",
+                "zendframework/zend-version": "self.version"
+            },
+            "suggest": {
+                "zendframework/zend-validator": "Zend\\Validator component"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Feed\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides functionality for consuming RSS and Atom feeds",
+            "keywords": [
+                "feed",
+                "zf2"
+            ],
+            "time": "2013-01-22 20:50:52"
+        },
+        {
+            "name": "zendframework/zend-filter",
+            "version": "2.0.7",
+            "target-dir": "Zend/Filter",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendFilter.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendFilter/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-stdlib": "self.version"
+            },
+            "require-dev": {
+                "zendframework/zend-crypt": "self.version"
+            },
+            "suggest": {
+                "zendframework/zend-crypt": "Zend\\Crypt component",
+                "zendframework/zend-i18n": "Zend\\I18n component",
+                "zendframework/zend-validator": "Zend\\Validator component"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Filter\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a set of commonly needed data filters",
+            "keywords": [
+                "filter",
+                "zf2"
+            ],
+            "time": "2013-01-25 16:31:35"
+        },
+        {
+            "name": "zendframework/zend-http",
+            "version": "2.0.7",
+            "target-dir": "Zend/Http",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendHttp.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendHttp/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-loader": "self.version",
+                "zendframework/zend-stdlib": "self.version",
+                "zendframework/zend-uri": "self.version"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Http\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides an easy interface for performing Hyper-Text Transfer Protocol (HTTP) requests",
+            "keywords": [
+                "http",
+                "zf2"
+            ],
+            "time": "2013-01-25 15:49:30"
+        },
+        {
+            "name": "zendframework/zend-i18n",
+            "version": "2.0.7",
+            "target-dir": "Zend/I18n",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendI18n.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendI18n/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*",
+                "php": ">=5.3.3",
+                "zendframework/zend-filter": "self.version",
+                "zendframework/zend-stdlib": "self.version"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\I18n\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "i18n",
+                "zf2"
+            ],
+            "time": "2013-01-22 20:50:52"
+        },
+        {
+            "name": "zendframework/zend-loader",
+            "version": "2.0.7",
+            "target-dir": "Zend/Loader",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendLoader.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendLoader/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "zendframework/zend-stdlib": "Zend\\Stdlib component"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Loader\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "loader",
+                "zf2"
+            ],
+            "time": "2013-01-22 20:50:52"
+        },
+        {
+            "name": "zendframework/zend-servicemanager",
+            "version": "2.0.7",
+            "target-dir": "Zend/ServiceManager",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendServiceManager.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendServiceManager/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "zendframework/zend-di": "Zend\\Di component"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\ServiceManager\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "servicemanager",
+                "zf2"
+            ],
+            "time": "2013-01-29 20:11:45"
+        },
+        {
+            "name": "zendframework/zend-stdlib",
+            "version": "2.0.7",
+            "target-dir": "Zend/Stdlib",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendStdlib.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendStdlib/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "pecl-weakref": "Implementation of weak references for Stdlib\\CallbackHandler"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Stdlib\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "stdlib",
+                "zf2"
+            ],
+            "time": "2013-01-22 20:50:52"
+        },
+        {
+            "name": "zendframework/zend-uri",
+            "version": "2.0.7",
+            "target-dir": "Zend/Uri",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendUri.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendUri/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-escaper": "self.version",
+                "zendframework/zend-validator": "self.version"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Uri\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "a component that aids in manipulating and validating » Uniform Resource Identifiers (URIs)",
+            "keywords": [
+                "uri",
+                "zf2"
+            ],
+            "time": "2013-01-07 17:45:37"
+        },
+        {
+            "name": "zendframework/zend-validator",
+            "version": "2.0.7",
+            "target-dir": "Zend/Validator",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendValidator.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendValidator/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zend-i18n": "self.version",
+                "zendframework/zend-servicemanager": "self.version",
+                "zendframework/zend-stdlib": "self.version"
+            },
+            "require-dev": {
+                "zendframework/zend-math": "self.version"
+            },
+            "suggest": {
+                "zendframework/zend-db": "Zend\\Db component",
+                "zendframework/zend-math": "Zend\\Math component"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Validator\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a set of commonly needed validators",
+            "keywords": [
+                "validator",
+                "zf2"
+            ],
+            "time": "2013-01-25 16:14:33"
+        },
+        {
+            "name": "zendframework/zend-version",
+            "version": "2.0.7",
+            "target-dir": "Zend/Version",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/Component_ZendVersion.git",
+                "reference": "release-2.0.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/Component_ZendVersion/zipball/release-2.0.7",
+                "reference": "release-2.0.7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\Version\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "keywords": [
+                "version",
+                "zf2"
+            ],
+            "time": "2013-01-29 22:52:16"
         }
     ],
     "packages-dev": null,
@@ -3215,6 +3676,7 @@
         "liip/functional-test-bundle": 20,
         "lunetics/locale-bundle": 20,
         "liip/doctrine-cache-bundle": 20,
-        "symfony-cmf/search-bundle": 20
+        "symfony-cmf/search-bundle": 20,
+        "eko/feedbundle": 20
     }
 }
