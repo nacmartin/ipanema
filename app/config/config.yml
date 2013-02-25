@@ -141,8 +141,34 @@ sonata_doctrine_phpcr_admin:
         Doctrine\PHPCR\Odm\Document\Generic:
             valid_children:
                 - all
-        Ipanema\CmsBundle\Document\Page: ~
-        Ipanema\CmsBundle\Document\MultilangPage: ~
+        Ipanema\CmsBundle\Document\Page:
+            valid_children:
+                - Ipanema\CmsBundle\Document\Page
+                - Ipanema\CmsBundle\Document\MultilangPage
+                - Symfony\Cmf\Bundle\BlockBundle\Document\SimpleBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Document\ContainerBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Document\ReferenceBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Document\ActionBlock
+        Ipanema\CmsBundle\Document\MultilangPage:
+            valid_children:
+                - Ipanema\CmsBundle\Document\Page
+                - Ipanema\CmsBundle\Document\MultilangPage
+                - Symfony\Cmf\Bundle\BlockBundle\Document\SimpleBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Document\ContainerBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Document\ReferenceBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Document\ActionBlock
+        Symfony\Cmf\Bundle\BlockBundle\Document\ReferenceBlock:
+            valid_children: []
+        Symfony\Cmf\Bundle\BlockBundle\Document\ActionBlock:
+            valid_children: []
+        Symfony\Cmf\Bundle\BlockBundle\Document\SimpleBlock:
+            valid_children: []
+        Symfony\Cmf\Bundle\BlockBundle\Document\ContainerBlock:
+            valid_children:
+                - Symfony\Cmf\Bundle\BlockBundle\Document\SimpleBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Document\ContainerBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Document\ReferenceBlock
+                - Symfony\Cmf\Bundle\BlockBundle\Document\ActionBlock
 
 symfony_cmf_create:
     phpcr_odm: true
