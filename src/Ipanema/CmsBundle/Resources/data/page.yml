@@ -30,6 +30,10 @@ static:
         label: "About us"
         title: "Some information about us"
         body: "The about us page with some content"
+        blocks:
+            additionalInfoBlock:
+                class: Symfony\Cmf\Bundle\BlockBundle\Document\ReferenceBlock
+                referencedBlock: /cms/simple/additionalInfoBlock/child1
 
     contact:
         name: "contact"
