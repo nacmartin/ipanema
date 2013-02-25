@@ -28,7 +28,7 @@ class Configuration implements ConfigurationInterface
                     ->values(array(true, false, 'auto'))
                     ->defaultValue('auto')
                 ->end()
-                ->scalarNode('document_class')->defaultValue('Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page')->end()
+                ->scalarNode('document_class')->defaultValue('Ipanema\CmsBundle\Document\Page')->end()
                 ->scalarNode('generic_controller')->defaultValue('symfony_cmf_content.controller:indexAction')->end()
                 ->scalarNode('basepath')->defaultValue('/cms/simple')->end()
                 ->arrayNode('routing')

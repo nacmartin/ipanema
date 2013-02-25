@@ -20,20 +20,23 @@
         "liip/functional-test-bundle": "dev-master",
         "lunetics/locale-bundle": "dev-master",
         "liip/doctrine-cache-bundle": "dev-master",
-        "sensio/generator-bundle": "2.1.*"
+        "sensio/generator-bundle": "2.1.*",
+        "sonata-project/doctrine-phpcr-admin-bundle": "1.0.*",
+        "symfony-cmf/tree-browser-bundle":"1.0.*",
+        "jms/security-extra-bundle": "1.4.*"
     },
     "scripts": {
         "post-install-cmd": [
             "Symfony\\Cmf\\Bundle\\CreateBundle\\Composer\\ScriptHandler::initSubmodules",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
             "Symfony\\Cmf\\Bundle\\CreateBundle\\Composer\\ScriptHandler::initSubmodules",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
         ]
     },
     "config": {
@@ -43,5 +46,5 @@
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
         "symfony-assets-install": "symlink"
-    },
+    }
 }
