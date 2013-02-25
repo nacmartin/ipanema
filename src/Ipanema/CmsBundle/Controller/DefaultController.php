@@ -74,4 +74,11 @@ class DefaultController extends Controller
     {
         return $this->render('IpanemaCmsBundle:Default:static.html.twig');
     }
+
+    public function blockAction($block)
+    {
+        return $this->render('IpanemaCmsBundle:Block:action_block.html.twig', array(
+            'block' => $block
+        ));
+    }
 }
