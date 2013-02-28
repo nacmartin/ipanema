@@ -13,3 +13,6 @@ app/SymfonyRequirements.php
 app/check.php
 
 /bin/
+
+.DS_Store
+.idea/*
